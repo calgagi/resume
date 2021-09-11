@@ -1,0 +1,112 @@
+\documentclass{article}
+
+% Language setting
+% Replace `english' with e.g. `spanish' to change the document language
+\usepackage[english]{babel}
+
+% Set page size and margins
+% Replace `letterpaper' with`a4paper' for UK/EU standard size
+\usepackage[margin=0.7in]{geometry}
+\documentclass[11pt,letterpaper,ragged2e,withhyper]{dodiresume}
+% Useful packages
+\usepackage{amsmath}
+\usepackage[colorlinks=true, allcolors=blue]{hyperref}
+
+\usepackage[defaultsans]{lato}  % Lato is humanist
+%\usepackage{helvet}  % Helvetica is always reliable
+% \usepackage[lf]{FiraSans}  % Fira Sans is fun but professional
+\renewcommand{\familydefault}{\sfdefault}
+
+% Horizontal line fill
+\def\hrulefill{\leavevmode\leaders\hrule height 1.2pt\hfill\kern\z}
+
+\begin{document}
+
+% Header
+\noindent \LARGE \textbf{Calvin Gagliano } \hrulefill
+\small
+\vskip 0.1in
+
+\setlength{\tabcolsep}{2.5em} % for the horizontal padding
+\noindent \sffamily%
+{\small\begin{tabular}[c]{l}
+  \tab \href{mailto:calgagi@gmail.com}{calgagi@gmail.com} \\
+  \tab \href{https://calgagi.github.io}{calgagi.github.io} \\
+  \tab (503) 915-5559
+\end{tabular}}\hfill%
+{\small\begin{tabular}[c]{r}
+  \href{https://linkedin.com/in/calgagi}{linkedin.com/in/calgagi} \tab \\
+  \href{https://github.com/calgagi}{github.com/calgagi} \tab \\
+  C++, C\#, Python \tab
+\end{tabular}}%
+
+\vskip 0.1in
+
+\noindent\large \textbf{Experience } \hrulefill
+\vskip 0.1in
+
+\noindent \normalsize \textbf{Microsoft Corporation - Software Engineer} \footnotesize (Visual Studio Debugger) \hfill \small \textit{July 2020 - Present, Redmond, WA}
+\begin{itemize}
+\item Developed the full temporary breakpoint and dependent breakpoint experiences for Visual Studio 2022 which were received extremely well from the community [\href{https://twitter.com/VS_Debugger/status/1425875011085029376}{1}] [\href{https://www.youtube.com/watch?v=-j5vLTcYe9o}{2}]
+\item Collaborated with .NET teams to create and consume APIs in order to support debugging .exe standalone files and data breakpoints in .NET 5 and higher versions
+\item Created a method for determining if memory is owned purely by a debugger-generated TypeProxy managed object or by the debuggee process which saved the debugger from displaying an incorrect error message 100+ times per month
+\end{itemize}
+
+\vskip 0.1in
+
+\noindent \normalsize \textbf{Association for Computing Machinery - Chapter President} \footnotesize (Oregon State University) \hfill \small \textit{May 2019 - June 2020, Corvallis, OR}
+\begin{itemize}
+\item Grew membership by 300\% by building leadership team, gaining official recognition, and creating chapter vision
+\item Collaborated with companies such as Fast Enterprises, Lucid Software, and MPulse for hiring events and technical discussions
+\item Hosted practice sessions for and competed in ACM ICPC, Google’s Hash Code, and local competitions to build a competitive programming community on Oregon State's campus
+\end{itemize}
+
+\vskip 0.1in
+
+\noindent \normalsize \textbf{Oregon State University - Teaching Assistant} \footnotesize (Computer Science) \hfill \small \textit{September 2018 - March 2020, Corvallis, OR}
+\begin{itemize}
+\item Taught universal coding concepts, basic data structures, and object-oriented programming using C and C++ in Oregon State University’s year-long introductory CS 16X course series
+\item Led and delivered weekly live-coding demos on topics such as pointers and recursion to lab sessions enrolling 20+ students
+\item Guided students through Oregon State's virtual Algorithms course (CS 325) via online office hours and grading
+\end{itemize}
+
+\vskip 0.1in
+
+\noindent \normalsize \textbf{Microsoft Corporation - Software Engineer Intern} \footnotesize (Azure CodeSign) \hfill \small \textit{June 2019 - September 2019, Redmond, WA}
+\begin{itemize}
+\item Developed a Docker image to componentize sign tools and custom key storage provider to enable portability
+\item Used Powershell, C#, and .NET to create, schedule, and deploy sign jobs between container instances, which delivered proof of concept for Azure signing service that currently signs \~3 billion files monthly
+\end{itemize}
+
+\vskip 0.1in
+
+\noindent \normalsize \textbf{Kaiser Permanente - Software Engineer Intern} \footnotesize (Claims Processing) \hfill \small \textit{June 2018 - September 2018, Portland, OR}
+\begin{itemize}
+\item Worked on a test automation web application that drove developer efficiency up ~50\% during testing phases
+\item Developed major full stack features with Angular.js such as bookmarking test cases and a 1-click-run button
+\item Created REST API routes using Node.js and Express.js to deliver results from thousands of tests every day
+\end{itemize}
+
+\vskip 0.1in
+
+\noindent \large \textbf{Projects } \hrulefill
+\vskip 0.1in
+\noindent \normalsize \textbf{cp\_gen} \footnotesize (C++, Makefile) \hfill \small \textit{\href{https://github.com/calgagi/cp_gen}{github.com/calgagi/cp\_gen}}
+\begin{itemize}
+\item CLI-based template generator for creating competitive programming templates on the fly, with an emphasis on ability to add and use new libraries easily
+\item Implemented automated building and testing using Makefile, YAML, and GitHub Actions
+\end{itemize}
+
+\vskip 0.1in
+
+\noindent \large \textbf{Education } \hrulefill
+\vskip 0.1in
+
+\noindent \normalsize \textbf{Oregon State University - Computer Science, B.S.} \footnotesize (3.92/4.00 GPA) \hfill \small \textit{September 2016 - June 2020, Corvallis, OR}
+\begin{itemize}
+\item Majored with a Systems focus and minored in Mathematics. Volunteered with the EECS Graduation Celebration Board.
+\item Relevant coursework: Advanced Algorithms, Graph Theory, Discrete Mathematics, Abstract Algebra
+\end{itemize}
+
+
+\end{document}
