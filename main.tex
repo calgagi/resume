@@ -20,6 +20,9 @@
 % Horizontal line fill
 \def\hrulefill{\leavevmode\leaders\hrule height 1.2pt\hfill\kern\z}
 
+% Remove page number
+\pagenumbering{gobble}
+
 \begin{document}
 
 % Header
@@ -47,8 +50,9 @@
 
 \noindent \normalsize \textbf{Microsoft Corporation - Software Engineer} \footnotesize (Visual Studio Debugger) \hfill \small \textit{July 2020 - Present, Redmond, WA}
 \begin{itemize}
-\item Developed the full temporary breakpoint and dependent breakpoint experiences for Visual Studio 2022 which were received extremely well from the community [\href{https://twitter.com/VS_Debugger/status/1425875011085029376}{1}] [\href{https://www.youtube.com/watch?v=-j5vLTcYe9o}{2}]
-\item Collaborated with .NET teams to create and consume APIs in order to support debugging .exe standalone files and data breakpoints in .NET 5 and higher versions
+\item Developed the full end-to-end dependent breakpoint experience for Visual Studio 2022 which received nearly \href{https://twitter.com/VS_Debugger/status/1437902110822047750}{500 likes on the VS Debugger twitter}
+\item Led the development of temporary breakpoints for Visual Studio 2022 which involved refactoring the debugger's glyph APIs and designing a better algorithm for persisting breakpoints
+\item Collaborated with .NET teams to design and consume new APIs to support debugging standalone .exe files and data breakpoints in .NET 5+
 \item Created a method for determining if memory is owned purely by a debugger-generated TypeProxy managed object or by the debuggee process which saved the debugger from displaying an incorrect error message 100+ times per month
 \end{itemize}
 
@@ -63,7 +67,7 @@
 
 \vskip 0.1in
 
-\noindent \normalsize \textbf{Oregon State University - Teaching Assistant} \footnotesize (Computer Science) \hfill \small \textit{September 2018 - March 2020, Corvallis, OR}
+\noindent \normalsize \textbf{Oregon State University - Teaching Assistant} \footnotesize (Undergrad CS) \hfill \small \textit{September 2018 - March 2020, Corvallis, OR}
 \begin{itemize}
 \item Taught universal coding concepts, basic data structures, and object-oriented programming using C and C++ in Oregon State University’s year-long introductory CS 16X course series
 \item Led and delivered weekly live-coding demos on topics such as pointers and recursion to lab sessions enrolling 20+ students
@@ -93,7 +97,7 @@
 \vskip 0.1in
 \noindent \normalsize \textbf{cp\_gen} \footnotesize (C++, Makefile) \hfill \small \textit{\href{https://github.com/calgagi/cp_gen}{github.com/calgagi/cp\_gen}}
 \begin{itemize}
-\item CLI-based template generator for creating competitive programming templates on the fly, with an emphasis on ability to add and use new libraries easily
+\item Command line interface-based template generator for creating competitive programming templates on the fly, with an emphasis on ability to add, test, and use new libraries easily
 \item Implemented automated building and testing using Makefile, YAML, and GitHub Actions
 \end{itemize}
 
