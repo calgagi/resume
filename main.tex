@@ -49,10 +49,12 @@
 
 \noindent \normalsize \textbf{Amazon Web Services, Inc. - Software Development Engineer II} \footnotesize (Directory Service) \hfill \small \textit{April 2024 - Present, Seattle, WA}
 \begin{itemize}
-    \item Designed an agent in .NET 8 that runs on Microsoft Active Directory (MAD) instances that monitors and reports unhealthy activity to an API Gateway backed by Lambda functions
-    \item Developed testing framework and tests in C\# with team members that are ran every minute on 100s of EC2 instances
-    \item Took ownership of the entire Hybrid monitoring workflow which involved diagnosing issues and serving as on-call
+    \item Designed an agent in .NET 8 that runs on Microsoft Active Directory instances that monitors and reports unhealthy activity to an API Gateway backed by an AWS Lambda
+    \item Developed a testing framework in C\# and collaborated to make tests that are ran every minute on 100s of EC2 instances which report results to control plane for analysis, actions, and alarms
+    \item Took ownership of Hybrid directory monitoring which involved creating supporting features across multiple AWS accounts, fixing issues with pipelines and infrastructure as code (IaC), creating integration tests, and organizing and prioritizing bugs
     \item Wrote Python script to modify the retention policies of millions of production directory instances' log groups
+    \item Developed feature for an internal API for getting Active Directories with multiple different instances states from DynamoDB
+    \item Won a runner-up award in the 2024 AWS Identity Hackathon for making a proof of concept of using Directory Service to authenticate/authorize Amazon's Bedrock GenAI to access different resources
 \end{itemize}
 
 \vskip 0.1in
@@ -92,16 +94,6 @@
 \begin{itemize}
     \item Created REST API routes using Node.js and Express.js to deliver results from thousands of tests every day
     \item Developed major full stack features with Angular.js such as bookmarking test cases and a 1-click-run button
-\end{itemize}
-
-\vskip 0.1in
-
-\noindent \large \textbf{Projects } \hrulefill
-\vskip 0.1in
-\noindent \normalsize \textbf{cp\_gen} \footnotesize (C++, Makefile) \hfill \small \textit{\href{https://github.com/calgagi/cp_gen}{github.com/calgagi/cp\_gen}}
-\begin{itemize}
-    \item Command line interface-based template generator for creating competitive programming templates on the fly, with an emphasis on ability to add, test, and use new libraries easily
-    \item Implemented automated building and testing using Makefile, YAML, and GitHub Actions
 \end{itemize}
 
 \vskip 0.1in
